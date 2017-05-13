@@ -12,7 +12,7 @@ One way to start a project is the following
 
 ```bash
 git clone https://github.com/eas342/templateArticle.git
-
+cd templateArticle
 rm -R .git/
 git init
 ```
