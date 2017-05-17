@@ -12,7 +12,10 @@ One way to start a project is the following
 
 ```bash
 git clone https://github.com/eas342/templateArticle.git
-cd templateArticle
-rm -R .git/
-git init
+mv -i templateArticle newArticle01
+cd newArticle01
+git remote set-url origin https://github.com/USERNAME/newArticle01.git
+# Then edit the file(s)
+git add ms.tex
+git push -u origin master
 ```
