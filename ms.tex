@@ -23,7 +23,7 @@
 %%
 %%
 %% using aastex version 6.2
-\documentclass{aastex62}
+\documentclass{aastex631}
 
 %% The default is a single spaced, 10 point font, single spaced article.
 %% There are 5 other style options available via an optional argument. They
@@ -167,7 +167,7 @@
 
 \begin{document}
 
-\title{A Template Article using \aastex v6.1}
+\title{A Template Article using \aastex v6.3.1}
 
 %% LaTeX will automatically break titles if they run longer than
 %% one line. However, you may use \\ to force a line break if
@@ -325,15 +325,15 @@ Figure \ref{fig:gridFig} shows a grid figure.
 %% If you wish to include an acknowledgments section in your paper,
 %% separate it off from the body of the text using the \acknowledgments
 %% command.
-\acknowledgments
 
-\section*{acknowledgements}
+\begin{acknowledgements}
 MCMC fitting makes use of \texttt{emcee} \citep{foreman-mackey2013emcee} and the covariance plot was made with \texttt{corner.py} \citep{foremanCorner}.
 Funding for E Schlawin is provided by NASA Goddard Spaceflight Center.
 This research has made use of the SIMBAD database, operated at CDS, Strasbourg, France;
 and NASA's Astrophysics Data System Bibliographic Services.
 The authors wish to recognize and acknowledge the very significant cultural role and reverence that the summit of Mauna Kea has always had within the indigenous Hawaiian community. We are most fortunate to have the opportunity to conduct observations from this mountain.
 We respectfully acknowledge the University of Arizona is on the land and territories of Indigenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O’odham and the Yaqui. Committed to diversity and inclusion, the University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.  
+\end{acknowledgements}
 
 
 %% To help institutions obtain information on the effectiveness of their 
