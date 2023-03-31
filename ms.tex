@@ -149,7 +149,7 @@
 %%
 %% If you wish, you may supply running head information, although
 %% this information may be modified by the editorial offices.
-\shorttitle{The Emission Spectrum of WASP-69 b}
+\shorttitle{\aastex\ sample article}
 \shortauthors{Schlawin et al.}
 %%
 %% You can add a light gray and diagonal water-mark to the first page 
@@ -167,7 +167,7 @@
 
 \begin{document}
 
-\title{The Emission Spectrum of WASP-69 b}
+\title{A Template Article using \aastex v6.3.1}
 
 %% LaTeX will automatically break titles if they run longer than
 %% one line. However, you may use \\ to force a line break if
@@ -219,16 +219,16 @@
 \correspondingauthor{Everett Schlawin}
 \email{eas342 AT EMAIL Dot Arizona .edu}
 
-\author[0000-0001-8291-6490]{Everett Schlawin, author order TBA}
+\author[0000-0001-8291-6490]{Everett Schlawin}
 \affiliation{Steward Observatory \\
 933 North Cherry Avenue \\
 Tucson, AZ 85721, USA}
 
-\author{The MANATEE team}
-\affil{MANATEE}
+\author[0000-0000-0000-0000]{John Smith}
+\affil{American Astronomical Society \\
+2000 Florida Ave., NW, Suite 300 \\
+Washington, DC 20009-1231, USA}
 
-\author{NIRCam GTO team}
-\affil{Other GTO Members}
 %% Note that the \and command from previous versions of AASTeX is now
 %% depreciated in this version as it is no longer necessary. AASTeX 
 %% automatically takes care of all commas and "and"s between authors names.
@@ -244,14 +244,14 @@ Tucson, AZ 85721, USA}
 %% Mark off the abstract in the ``abstract'' environment. 
 \begin{abstract}
 
-WASP-69 b is a Saturn-Mass Hot Jupiter with an Zero-Albedo Equilibrium Temperature of 960 K
+This is a template article that I'll use for starting future articles.
 
 \end{abstract}
 
 %% Keywords should appear after the \end{abstract} command. 
 %% See the online documentation for the full list of available subject
 %% keywords and the rules for their use.
-\keywords{stars: atmospheres --- stars: individual (\objectname{WASP-69 b}) ---
+\keywords{stars: atmospheres --- stars: individual (\objectname{KIC 12557548}) ---
 stars: variables: general}
 
 %% From the front matter, we move on to the body of the paper.
@@ -271,16 +271,7 @@ stars: variables: general}
 
 \section{Introduction} \label{sec:intro}
 
-WASP-69 b is an inflated Saturn mass transiting planet (0.29 $M_{Jup}$, 1.1 $R_{Jup}$) orbiting a K5 star (4700 K, 0.83 M$_\odot$, 0.81 R$_\odot$)  with an equilibrium temperature of 963 K \citep{anderson2014wasp69wasp84wasp70Ab}.
-
-Searches for Na in the atmospheres of WASP-69 b have yielded a scattering of results. 
-WASP-69 b had a significant Na detection in high resolution that absorbs 3.3\% of the stellar flux in the Na D2 line \citep{langeveld2022surveyNaHighRes}.
-Muted but significant detections of both the Na I D1 and Na I D2 lines were detected by \citep{khalafinejad2021wasp69b_lowResHighRes}.
-
-\citep{murgas2020rayleighScatteringWASP69b} find that the optical transmission spectrum with a spectral slope that is consistent with Rayleigh scattering from hydrogen.
-However, the spectral slope is also consistent with stellar activity and the transit light source effect \citep{rackham2018transitSourceEffect}.
-
-Extended Helium has also been detected in WASP-69 b with a signal-to-noise ratio of 18 that is blue-shifted from several km/s \citep{nortmann2018heliumWASP69b}. This was confirmed with narrowband photometry, constraining the mass loss rate to be 10$^{-4}$ to 10$^{-3}$ M$_{Jup}$/Gyr \citep{vissapragada2020heliumWASP69bWASP52b}.
+Here's the background and why this paper is important.
 
 Section \ref{sec:obs} describes the observations. 
 
@@ -288,46 +279,47 @@ Section \ref{sec:obs} describes the observations.
 Table \ref{tab:observations} contains a summary of Observations.
 
 
-%\begin{deluxetable*}{ccCrlc}[b!]
-%\tablecaption{Summary of observations\label{tab:observations}}
-%\tablecolumns{6}
-%%\tablenum{2}
-%\tablewidth{0pt}
-%\tablehead{
-%\colhead{UT start time} &
-%\colhead{Type\tablenotemark{a}} &
-%\colhead{Seeing} & \colhead{Filter} & \colhead{Inst.} \\
-%\colhead{(YYYY-mm-dd)} & \colhead{} &
-%\colhead{(arcsec)} & \colhead{} & \colhead{}
-%}
-%\startdata
-%2012-01-20 & Transit & \sim 0.\arcsec5 & prism & SpeX \\
-%2012-01-20 & Transit & 1.\arcsec5 & R & MORIS \\
-%2012-01-22 & Sec. Eclipse & \nodata & G141 & HST \\
-%\enddata
-%\tablenotetext{a}{Type of observation.}
-%\tablecomments{Summary of observations.}
-%\end{deluxetable*}
+\begin{deluxetable*}{ccCrlc}[b!]
+\tablecaption{Summary of observations\label{tab:observations}}
+\tablecolumns{6}
+%\tablenum{2}
+\tablewidth{0pt}
+\tablehead{
+\colhead{UT start time} &
+\colhead{Type\tablenotemark{a}} &
+\colhead{Seeing} & \colhead{Filter} & \colhead{Inst.} \\
+\colhead{(YYYY-mm-dd)} & \colhead{} &
+\colhead{(arcsec)} & \colhead{} & \colhead{}
+}
+\startdata
+2012-01-20 & Transit & \sim 0.\arcsec5 & prism & SpeX \\
+2012-01-20 & Transit & 1.\arcsec5 & R & MORIS \\
+2012-01-22 & Sec. Eclipse & \nodata & G141 & HST \\
+\enddata
+\tablenotetext{a}{Type of observation.}
+\tablecomments{Summary of observations.}
+\end{deluxetable*}
 
 
 \section{Figures\label{sec:figures}}
 
-Figure \ref{fig:waspTbSpec}.
+Figure \ref{fig:sampFig} shows a sample figure on its own.
+Figure \ref{fig:gridFig} shows a grid figure.
 
 \begin{figure}[!hbtp]
 \centering
-\includegraphics[width=.4\columnwidth]{Tb_spec.png}
-\caption{Brightness Temperature Spectrum.}\label{fig:waspTbSpec}
+\includegraphics[width=.4\columnwidth]{sample_img.pdf}
+\caption{Sample Image.}\label{fig:sampFig}
 \end{figure}
 
-%\subsection{Grid Figures}\label{sec:gridFig}
-%
-%\begin{figure*}
-%\gridline{\fig{sample_img.pdf}{0.3\textwidth}{Red Figure}
-%          \fig{sample_red.png}{0.3\textwidth}{Green Figure}
-%          }
-%\caption{Two figures side by side.\label{fig:gridFig}}
-%\end{figure*}
+\subsection{Grid Figures}\label{sec:gridFig}
+
+\begin{figure*}
+\gridline{\fig{sample_img.pdf}{0.3\textwidth}{Red Figure}
+          \fig{sample_red.png}{0.3\textwidth}{Green Figure}
+          }
+\caption{Two figures side by side.\label{fig:gridFig}}
+\end{figure*}
 
 
 %% If you wish to include an acknowledgments section in your paper,
